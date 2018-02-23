@@ -1,0 +1,23 @@
+.menu-red {
+    color:#FF5050 !important;
+}
+
+.team-member img {
+    border: 3px solid #FF5050 !important;
+}
+
+.team-member-padding {
+    padding: 10px 10px 10px 55px;
+}
+
+.sponsor-img {
+    max-height: 80px;
+}
+
+.support-img {
+    max-height: 55px;
+}
+
+.support-padding {
+    padding: 10px 60px;
+}
