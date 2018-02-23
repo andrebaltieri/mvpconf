@@ -21,3 +21,16 @@
 .support-padding {
     padding: 10px 60px;
 }
+
+.bg-white {
+    background-color: "#fff";
+    padding: 10px 10px 10px 10px
+}
+
+.intro-text {
+    padding-top: 200px !important;
+}
+
+.mvp-intro {
+    max-height: 120px;
+}
