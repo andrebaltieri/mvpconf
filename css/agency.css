@@ -700,3 +700,12 @@ ul.social-buttons li a {
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #FF5050;
 }
+
+.team-member a:hover {
+  color: #FF5050 ;
+  text-decoration: none;
+} 
+
+.team-member img {
+  border: 4px solid #FF5050 !important;
+}
