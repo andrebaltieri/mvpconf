@@ -27,6 +27,17 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
   <script src="https://maps.google.com/maps/api/js"></script>
+
+  <link rel="manifest" href="/manifest.json" />
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function () {
+      OneSignal.init({
+        appId: "c6a1eb44-66d9-411a-a39b-c2de9b4e0430",
+      });
+    });
+  </script>
 </head>
 
 <body id="page-top">
