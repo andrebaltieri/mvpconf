@@ -8,6 +8,7 @@
   <meta name="author" content="Microsoft MVP Conference">
   <title>Microsoft MVP Conference</title>
   <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="manifest" href="manifest.json">
 
   <!--Facebook Share-->
   <meta property="og:url" content='https://mvpconf.com.br/' />
@@ -20,13 +21,33 @@
 
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/agency.css" rel="stylesheet">
-  <link href="css/mvpconf.css" rel="stylesheet">
 
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
   <script src="https://maps.google.com/maps/api/js"></script>
+
+  <link rel="manifest" href="/manifest.json" />
+  
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function () {
+      OneSignal.init({
+        appId: "c6a1eb44-66d9-411a-a39b-c2de9b4e0430",
+      });
+    });
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114854328-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-114854328-1');
+  </script>
+
 </head>
 
 <body id="page-top">
@@ -44,19 +65,19 @@
         <ul class="navbar-nav text-uppercase ml-auto">
 
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#sobre">Evento</a>
+            <a class="nav-link js-scroll-trigger" href="#sobre">Sobre o evento</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Agenda</a>
+            <a class="nav-link js-scroll-trigger" href="#objetivo">Objetivo</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Conteúdo</a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#palestrantes">Palestrantes</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#patrocionadores">Patrocinadores</a>
           </li>
 
           <li class="nav-item">
@@ -66,29 +87,57 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contato">Contato</a>
           </li>
-
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger menu-red" target="_blank" href="https://www.sympla.com.br/microsoft-mvp-conference__246657">Inscreva-se</a>
-          </li>
-
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- texto do meio com banner -->
-  <header class="masthead">
-    <div class="container">
-      <div class="intro-text">
-        <div class="intro-lead-in"><img src="img/mvp_logo.png" class="mvp-intro" /></div>
-        <div class="intro-lead-in">Microsoft MVP Conference</div>
-        <div class="intro-heading text-uppercase">O maior evento técnico de experts Microsoft</div>
-        <div class="intro-lead-in">06 e 07 de Abril na UNIP Tatuapé - São Paulo</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://www.sympla.com.br/microsoft-mvp-conference__246657"
-          target="_blank">Inscreva-se</a>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+          <div class="carousel-item active">
+            <header class="masthead">
+              <div class="intro-text">
+                <div class="intro-lead-in">Microsoft MVP Conference</div>
+                <div class="intro-heading text-uppercase">O maior evento técnico de experts Microsoft</div>
+                <div class="intro-lead-in">06 e 07 de Abril na UNIP Tatuapé - São Paulo</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://www.sympla.com.br/microsoft-mvp-conference__246657"
+                  target="_blank">Inscreva-se
+                </a>
+                <br />
+                <small style="font-size:70%">* O valor do ingresso será doado a APAE</small>
+              </div>
+            </header>
+          </div>
+          <div class="carousel-item">
+            <header class="masthead-keynotes">
+                <div class="intro-text">
+                    <div class="intro-heading text-uppercase">Keynotes especiais</div>
+                    <div class="intro-lead-in">Keynotes 1</div>
+                    <div class="intro-lead-in">Keynotes 2</div>
+                    <div class="intro-lead-in">Keynotes 3</div>
+                  </div>
+            </header>
+          </div>
+          <div class="carousel-item">
+              <header class="masthead-keynotes2">
+                  <div class="intro-text">
+                      <div class="intro-lead-in"></div>
+                      <div class="intro-heading text-uppercase">Keynotes especiais</div>
+                      <div class="intro-lead-in">Keynotes 1</div>
+                      <div class="intro-lead-in">Keynotes 2</div>
+                      <div class="intro-lead-in">Keynotes 3</div>
+                    </div>
+              </header>
+          </div>
       </div>
-    </div>
-  </header>
+  </div>
+  
 
   <!-- sessão - sobre -->
   <section id="sobre">
@@ -139,9 +188,9 @@
                   <h4 class="subheading">Conteúdo selecionado</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Foram enviadas mais de 100 sessões e selecionamos os melhores tópicos para você. Assinamos com o selo MVP
-                    de qualidade, que você nunca viu igual. Aproveite esta oportunidade para aprender mais e fazer muito
-                    networking. </p>
+                  <p class="text-muted">Foram enviadas mais de 100 sessões e selecionamos os melhores tópicos para você, assinamos com selo MVP
+                    de qualidade que você ainda não viu nada parecido. Aproveite essa oportunidade para aprender mais e fazer
+                    muito networking.</p>
                 </div>
               </div>
             </li>
@@ -189,9 +238,6 @@
           <h4 class="service-heading">Comunidade MVPs</h4>
           <p class="text-muted">Microsoft Most Valuable Professional (MVP) é um prêmio dado a líderes de comunidades técnicas que já demonstraram
             um compromisso exemplar ao ajudar os outros a obter o máximo de sua experiência com as tecnologias Microsoft.</p>
-          <p class="text-muted">
-            <a class="btn btn-primary btn-md text-uppercase js-scroll-trigger" href="http://mvp.microsoft.com" target="_blank">Saiba mais</a>
-          </p>
         </div>
 
         <div class="col-md-4">
@@ -204,10 +250,13 @@
             conhecimento profissional.</p>
         </div>
         <div class="col-md-4">
-            <img class="mx-auto rounded-circle bg-white" src="img/apae_logo.png" alt="APAE">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-wheelchair fa-stack-1x fa-inverse"></i>
+          </span>
           <h4 class="service-heading">Doação para APAE</h4>
           <p class="text-muted">De nada adianta agregar valor se não pudermos ajudar o próximo, correto? Pensando nisso, todo o dinheiro arrecadado
-            nesse evento será doado para a APAE</p>
+            nesse evento será doado para a APAE.</p>
         </div>
       </div>
     </div>
@@ -258,7 +307,7 @@
           </a>
           <div class="portfolio-caption">
             <h4>DevOps</h4>
-            <p class="text-muted">5 Palestras</p>
+            <p class="text-muted">6 Palestras</p>
           </div>
         </div>
 
@@ -342,23 +391,23 @@
           </a>
           <div class="portfolio-caption">
             <h4>Visual Studio</h4>
-            <p class="text-muted">9 Palestras</p>
+            <p class="text-muted">8 Palestras</p>
           </div>
         </div>
+
       </div>
+    </div>
   </section>
 
   <!-- sobre - palestrantes -->
   <section class="bg-light" id="palestrantes">
     <div class="container">
-
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Palestrantes</h2>
           <h3 class="section-subheading text-muted">Conheça os experts que estarão no evento...</h3>
         </div>
       </div>
-
       <div class="row team-member-padding">
         <div class="col-xs-2">
           <div class="team-member">
@@ -784,7 +833,7 @@
         </div>
         <div class="col-xs-2">
           <div class="team-member">
-            <a href="https://mvp.microsoft.com/pt-br/mvp/Rafael%20Ferreira%20dos%20Santos-5002632" target="_blank">
+            <a href="https://mvp.microsoft.com/pt-br/PublicProfile/5000815?fullName=Rafael%20Felipe%20Silva" target="_blank">
               <img class="mx-auto rounded-circle" src="img/palestrantes/Rafael Santos.jpg" alt="Rafael Santos">
               <h4>
                 <small>Rafael</small>
@@ -932,96 +981,13 @@
       </div>
     </div>
   </section>
-
-  <section id="patrocionadores">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Patrocinadores</h2>
-          <h3 class="section-subheading text-muted">&nbsp;</h3>
-        </div>
-      </div>
-      <div class="row team-member-padding">
-        <div class="col-xs-6">
-          <div>
-            <img class="mx-auto sponsor-img" src="img/patrocinadores/microsoft-logo.png" alt="Microsoft">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="apoiadores">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Apoiadores</h2>
-          <h3 class="section-subheading text-muted">&nbsp;</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-4 support-padding">
-          <div>
-            <img class="mx-auto support-img" src="img/apoiadores/bhs.jpg" alt="Microsoft">
-          </div>
-        </div>
-        <div class="col-xs-4 support-padding">
-          <div>
-            <img class="mx-auto support-img" src="img/apoiadores/cloudc.jpg" alt="Microsoft">
-          </div>
-        </div>
-        <div class="col-xs-4 support-padding">
-          <div>
-            <img class="mx-auto support-img" src="img/apoiadores/dac_network.gif" alt="Microsoft">
-          </div>
-        </div>
-        
-      </div>
-      <div class="row">
-          <div class="col-xs-4 support-padding">
-            <div>
-              <img class="mx-auto support-img" src="img/apoiadores/eseth.png" alt="Microsoft">
-            </div>
-          </div>
-          <div class="col-xs-4 support-padding">
-            <div>
-              <img class="mx-auto support-img" src="img/apoiadores/fabricio_lima.png" alt="Microsoft">
-            </div>
-          </div>
-          <div class="col-xs-4 support-padding">
-            <div>
-              <img class="mx-auto support-img" src="img/apoiadores/galvao_tecnologia.jpg" alt="Microsoft">
-            </div>
-          </div>
-          
-        </div>
-        <div class="row">
-            <div class="col-xs-4 support-padding">
-              <div>
-                <img class="mx-auto support-img" src="img/apoiadores/pronext.png" alt="Microsoft">
-              </div>
-            </div>
-            <div class="col-xs-4 support-padding">
-              <div>
-                <img class="mx-auto support-img" src="img/apoiadores/true_sec.png" alt="Microsoft">
-              </div>
-            </div>
-            <div class="col-xs-4 support-padding">
-              <div>
-                <img class="mx-auto support-img" src="img/apoiadores/wenz.jpg" alt="Microsoft">
-              </div>
-            </div>
-          </div>
-    </div>
-  </section>
-
   <!-- sessao - contato -->
   <section id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Data e local</h2>
-          <h3 class="section-subheading text-white">06 e 07 de Abril na UNIP Tatuapé - São Paulo</h3>
+          <h3 class="section-subheading">06 e 07 de Abril na UNIP Tatuapé - São Paulo</h3>
         </div>
       </div>
       <div class="row">
@@ -1029,9 +995,11 @@
           <form id="contactForm" name="sentMessage" novalidate>
             <div class="row">
               <!--Google map-->
+
               <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCFabiWSKKdd85TrWkEcyj9FvNLN8GNBmI
                       &q=UNIP+Tatuape,SP" allowfullscreen>
               </iframe>
+
             </div>
           </form>
         </div>
@@ -1039,6 +1007,7 @@
     </div>
   </section>
 
+  <!-- sessao - contato -->
   <section id="contato">
     <div class="container">
       <div class="row">
@@ -1092,10 +1061,7 @@
         <div class="col-md-4">
           <ul class="list-inline quicklinks">
             <li class="list-inline-item">
-              <a href="#">Termos de Privacidade</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">Termos de uso</a>
+              <a data-toggle="modal" href="#codigo-conduta">Código de Conduta</a>
             </li>
           </ul>
         </div>
@@ -1122,7 +1088,7 @@
                 <h2 class="text-uppercase">Trilha Azure</h2>
                 <p class="item-intro text-muted">12 Palestras</p>
 
-                <table class="table table-striped">
+                <table class="table table-hover table-responsive table-striped">
                   <thead>
                     <tr>
                       <th class="text-center">Sala</th>
@@ -1172,7 +1138,7 @@
                       <td class="text-center">TBD</td>
                       <td class="text-center">TBD</td>
                       <td>Renato Groffe</td>
-                      <td>NoSQL na nuvem com o Azure Cosmos DB</td>
+                      <td>NoSQL na nuvem com o Azure Cosmos DB</td>
                     </tr>
                     <tr>
                       <td class="text-center">TBD</td>
@@ -1234,7 +1200,7 @@
                 <h2 class="text-uppercase">Contêineres</h2>
                 <p class="item-intro text-muted">4 palestras</p>
 
-                <table class="table table-striped">
+                <table class="table table-hover table-responsive table-striped">
                   <thead>
                     <tr>
                       <th class="text-center">Sala</th>
@@ -1297,7 +1263,7 @@
                 <h2 class="text-uppercase">DevOps</h2>
                 <p class="item-intro text-muted">5 palestras</p>
 
-                <table class="table table-striped">
+                <table class="table table-hover table-responsive table-striped">
                   <thead>
                     <tr>
                       <th class="text-center">Sala</th>
@@ -1344,6 +1310,12 @@
                       <td>Vinicius Moura</td>
                       <td>Migrando do TFS para o VSTS sem medo </td>
                     </tr>
+                    <tr>
+                      <td class="text-center">TBD</td>
+                      <td class="text-center">TBD</td>
+                      <td>Rodrigo Kono</td>
+                      <td>Controlando o Ciclo de Software e porque você deveria usar o VSTS</td>
+                    </tr>
                   </tbody>
                 </table>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">FECHAR</button>
@@ -1371,7 +1343,7 @@
                 <h2 class="text-uppercase">Empreendedorismo</h2>
                 <p class="item-intro text-muted">3 palestras</p>
 
-                <table class="table table-striped">
+                <table class="table table-hover table-responsive table-striped">
                   <thead>
                     <tr>
                       <th class="text-center">Sala</th>
@@ -1430,7 +1402,7 @@
                 <h2 class="text-uppercase">IA & BigData</h2>
                 <p class="item-intro text-muted">5 palestras</p>
 
-                <table class="table table-striped">
+                <table class="table table-hover table-responsive table-striped">
                   <thead>
                     <tr>
                       <th class="text-center">Sala</th>
@@ -1497,7 +1469,7 @@
                 <h2 class="text-uppercase">IoT</h2>
                 <p class="item-intro text-muted">3 palestras</p>
 
-                <table class="table table-striped">
+                <table class="table table-hover table-responsive table-striped">
                   <thead>
                     <tr>
                       <th class="text-center">Sala</th>
@@ -1552,7 +1524,7 @@
                 <h2 class="text-uppercase">ITPro & Segurança</h2>
                 <p class="item-intro text-muted">10 palestras</p>
 
-                <table class="table table-striped">
+                <table class="table table-hover table-responsive table-striped">
                   <thead>
                     <tr>
                       <th class="text-center">Sala</th>
@@ -1650,7 +1622,7 @@
                 <h2 class="text-uppercase">Mobilidade</h2>
                 <p class="item-intro text-muted">3 palestras</p>
 
-                <table class="table table-striped">
+                <table class="table table-hover table-responsive table-striped">
                   <thead>
                     <tr>
                       <th class="text-center">Sala</th>
@@ -1666,12 +1638,22 @@
                       <td>Alexandre Costa</td>
                       <td>Xamarin.Forms no mundo real</td>
                     </tr>
+
                     <tr>
                       <td class="text-center">TBD</td>
                       <td class="text-center">TBD</td>
                       <td>Valerio Ferreira</td>
                       <td>Por que você deve utilizar Xamarin para desenvolver aplicativos para Android e iOS</td>
                     </tr>
+
+                    <tr>
+                      <td class="text-center">TBD</td>
+                      <td class="text-center">TBD</td>
+                      <td>William S. Rodriguez</td>
+                      <td>Compile, teste, distrubua, entenda, monitore e engage usuários em seu aplicativo móvel com o Visual
+                        Studio App Center.</td>
+                    </tr>
+
                   </tbody>
                 </table>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">FECHAR</button>
@@ -1699,7 +1681,7 @@
                 <h2 class="text-uppercase">Office 365</h2>
                 <p class="item-intro text-muted">7 palestras</p>
 
-                <table class="table table-striped">
+                <table class="table table-hover table-responsive table-striped">
                   <thead>
                     <tr>
                       <th class="text-center">Sala</th>
@@ -1781,7 +1763,7 @@
                 <h2 class="text-uppercase">Visual Studio</h2>
                 <p class="item-intro text-muted">9 palestras</p>
 
-                <table class="table table-striped">
+                <table class="table table-hover table-responsive table-striped">
                   <thead>
                     <tr>
                       <th class="text-center">Sala</th>
@@ -1831,12 +1813,6 @@
                     <tr>
                       <td class="text-center">TBD</td>
                       <td class="text-center">TBD</td>
-                      <td>Rodrigo Kono</td>
-                      <td>Dicas para o desenvolvimento frontend com Visual Studio 2017</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">TBD</td>
-                      <td class="text-center">TBD</td>
                       <td>Alexandre Costa</td>
                       <td>Acessibilidade no Visual Studio</td>
                     </tr>
@@ -1857,6 +1833,242 @@
     </div>
   </div>
 
+  <div class="portfolio-modal modal fade" id="codigo-conduta" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <div class="modal-body text-left">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Código de Conduta</h2>
+                <h3 id="tldr">TL;DR</h3>
+
+                <p>Esperamos que você se comporte. Que respeite as pessoas à sua volta. Que não exclua pessoas com base nas
+                  suas origens, comportamentos, ou atributos. Que não faça comentários agressivos de qualquer natureza. Se
+                  isso acontecer nós iremos lhe avisar, se acontecer de forma reiterada nós iremos lhe remover, e você está
+                  de acordo com isso.</p>
+
+                <h3 id="em-detalhes">Em detalhes</h3>
+
+                <p>A Microsoft MVP Conference Brasil está comprometida com uma política anti-assédio independentemente de:
+                </p>
+
+                <ul>
+                  <li>Histórico de vida;</li>
+                  <li>Aparência física;</li>
+                  <li>Situação familiar;</li>
+                  <li>Gênero;</li>
+                  <li>Identidade ou expressão de gênero;</li>
+                  <li>Estado civil;</li>
+                  <li>Sexo;</li>
+                  <li>Orientação sexual;</li>
+                  <li>Língua materna;</li>
+                  <li>Idade;</li>
+                  <li>Capacidade;</li>
+                  <li>Deficiência;</li>
+                  <li>Raça e/ou etnia;</li>
+                  <li>Nacionalidade;</li>
+                  <li>Condição socioeconômica;</li>
+                  <li>Religião (ou falta dela);</li>
+                  <li>Localização geográfica;</li>
+                  <li>Qualquer outra dimensão da diversidade.</li>
+                </ul>
+
+                <h4 id="esperamos-os-seguintes-comportamentos">Esperamos os seguintes comportamentos</h4>
+
+                <h5 id="tenha-uma-postura-respeitosa">Tenha uma postura respeitosa
+                </h5>
+
+                <p>Valorize as ideias, os estilos e os pontos de vista de cada um. Nem sempre concordaremos, mas isso não justifica
+                  comportamentos desrespeitosos. Esteja aberto a diferentes possibilidades e a assumir seus erros. Seja gentil
+                  em todas as interações e comunicações. Esteja ciente do impacto das suas ações e de como isso poderá afetar
+                  as pessoas. Seja direto, construtivo e positivo. Assuma a responsabilidade pela repercussão dos seus atos
+                  e por seus erros. Se alguém disser que foi prejudicado por suas palavras ou ações, ouça com atenção, peça
+                  desculpas sinceramente e mude seu comportamento.
+                </p>
+
+                <h5 id="seja-direto-mas-profissional">Seja direto, mas profissional
+                </h5>
+
+                <p>É provável que ocorram discussões sobre se uma crítica é respeitosa e se não é. Precisamos conseguir falar
+                  diretamente, de forma honesta, direta e educada.</p>
+
+                <h5 id="seja-inclusivo">Seja inclusivo</h5>
+
+                <p>A multiplicidade de pontos de vista e de pessoas estimula a inovação e aumenta o conhecimento, mesmo que
+                  nem sempre isso seja confortável. Ajude as novas perspectivas a serem ouvidas. Pense em como você pode
+                  facilitar maneiras alternativas de contribuição e/ou participação.</p>
+
+                <h5 id="compreenda-as-diferentes-perspectivas">Compreenda as diferentes perspectivas</h5>
+
+                <p>O objetivo não é “vencer” cada divergência ou discussão. É mais produtivo estar aberto a ideias que melhorem
+                  os nossos próprios conhecimentos. Esforce-se para ser um exemplo de pensamento inclusivo. “Vencemos” quando
+                  as diferentes perspectivas enriquecem e fortalecem a nossa vida.
+                </p>
+
+                <h5 id="valorize-e-adapte-se-às-semelhanças-e-diferenças">Valorize e adapte-se às semelhanças e diferenças</h5>
+
+                <p>As diferenças culturais podem abranger tudo, desde práticas religiosas até hábitos pessoais e de vestimentas.
+                  Seja respeitoso com as pessoas que adotam diferentes práticas culturais, atitudes e crenças. Trabalhe para
+                  eliminar seus próprios preconceitos, tendências e padrões discriminatórios. Pense nas necessidades dos
+                  outros sob o ponto de vista deles. Refira-se às pessoas do modo que elas preferem (incluindo pronomes)
+                  e em tom de voz apropriado.
+                </p>
+
+                <p>Não é realista esperar que todos conheçam as práticas culturais de todos as diversas formas de grupos, mas
+                  todos precisam reconhecer que a cultura de cada um é apenas parte das relações.</p>
+
+                <h5 id="lidere-pelo-exemplo">Lidere pelo exemplo</h5>
+
+                <p>Ao combinar suas ações com suas palavras, você se torna uma pessoa que os outros querem seguir. Projete sua
+                  comunidade para inclusão. Seja responsável e responsabilize-se pelos comportamentos inclusivos. Tome decisões
+                  que tenham como base a melhor contribuição possível.
+                </p>
+
+                <h4 id="os-seguintes-comportamentos-são-considerados-inaceitáveis">Os seguintes comportamentos são considerados inaceitáveis</h4>
+
+                <h5 id="violência-e-ameaças-de-violência">Violência e ameaças de violência</h5>
+
+                <p>Violência e ameaças de violência não são aceitáveis, seja online ou offline. Isso inclui incitação à hostilidade
+                  contra qualquer indivíduo, inclusive incentivando a autoagressão. Isso também envolve postar ou ameaçar
+                  publicar informações de identificação pessoal de outras pessoas (doxxing) online.</p>
+
+                <h5 id="respeite-o-direito-das-pessoas-à-privacidade-e-confidencialidade">Respeite o direito das pessoas à privacidade e confidencialidade.
+                </h5>
+
+                <h5 id="ataques-pessoais">Ataques pessoais</h5>
+
+                <p>Conflitos inevitavelmente surgem, mas a insatisfação nunca deverá transformar-se em um ataque pessoal. Não
+                  é adequado insultar, humilhar ou menosprezar os outros. Atacar alguém por suas opiniões, crenças e ideias
+                  não é admissível. É importante falar diretamente quando discordamos. No entanto, essas discussões precisam
+                  ser conduzidas de maneira respeitosa e profissional, mantendo o foco no assunto em questão.
+                </p>
+
+                <h5 id="linguagem-prejudicial-pejorativa-ou-ofensiva-relacionada-a">Linguagem prejudicial, pejorativa ou ofensiva relacionada a:</h5>
+
+                <ul>
+                  <li>Histórico de vida;</li>
+                  <li>Aparência física;</li>
+                  <li>Situação familiar;</li>
+                  <li>Gênero;</li>
+                  <li>Identidade ou expressão de gênero;</li>
+                  <li>Estado civil;</li>
+                  <li>Sexo;</li>
+                  <li>Orientação sexual;</li>
+                  <li>Língua materna;</li>
+                  <li>Idade;</li>
+                  <li>Capacidade;</li>
+                  <li>Deficiência;</li>
+                  <li>Raça e/ou etnia;</li>
+                  <li>Nacionalidade;</li>
+                  <li>Condição socioeconômica;</li>
+                  <li>Religião (ou falta dela);</li>
+                  <li>Localização geográfica;</li>
+                  <li>Qualquer outra dimensão da diversidade.</li>
+                </ul>
+
+                <p>não são toleráveis. Isso inclui intencionalmente referir-se a uma pessoa por um gênero ao qual ela não se
+                  identifica e/ou questionar a legitimidade da identidade de gênero.
+                </p>
+
+                <p>Se você não tiver certeza se uma palavra for pejorativa, não a use. Isso também inclui discriminação sutil
+                  e/ou indireta.
+                </p>
+
+                <p>Quando solicitado a parar, pare o comportamento em questão.
+                </p>
+
+                <h5 id="contato-físico-ou-avanço-sexual-inoportunos">Contato físico ou avanço sexual inoportunos</h5>
+
+                <p>O avanço sexual e o contato físico indesejados não são aceitáveis. Isso inclui:</p>
+
+                <ul>
+                  <li>Piadas sexistas, machistas, homofóbicas, transfóbicas, racistas ou de qualquer natureza ofensiva;
+                  </li>
+                  <li>Imagens e comentários sexualizados e/ou ofensivo em interações, comunicações ou materiais de apresentação;
+                  </li>
+                  <li>Toques inadequados, bem como avanços sexuais, tocar uma pessoa sem permissão, incluindo áreas sensíveis,
+                    como cabelo, a barriga de mulheres grávidas, tatuagens, dispositivo de mobilidade (cadeira de rodas,
+                    bengalas, próteses, etc.);</li>
+                  <li>Bloquear fisicamente ou intimidar uma pessoa</li>
+                  <li>Contato físico ou contato físico simulado (por exemplo, mensagens, e-mails… com insinuação sexual e/ou
+                    ofensivos);
+                  </li>
+                  <li>Compartilhamento e a distribuição de imagens/ texto sexualizados e/ou ofensivos.
+                  </li>
+                </ul>
+
+                <h5 id="comportamento-incômodo">Comportamento incômodo</h5>
+
+                <p>A interrupção constante em eventos, fóruns, palestras, cursos, apresentações, etc., não será tolerada. Isso
+                  engloba:
+                </p>
+
+                <ul>
+                  <li>Cortar a fala do palestrante ou interrompê-lo com propósito de provocação;</li>
+                  <li>Pressionar outros a ingerirem bebidas alcoólicas ou usar drogas recreativas;</li>
+                  <li>Fazer comentários pejorativos sobre aqueles que se abstêm de bebidas alcoólicas ou outras substâncias;
+                    coagir as pessoas para que bebam, falar sobre sua abstinência ou preferências para os outros ou pressioná-las
+                    para que bebam, de forma física ou através de zombaria;</li>
+                  <li>Persuadir ações em grupo que causem hostilidade;
+                  </li>
+                  <li>Instigar qualquer comportamento inaceitável.</li>
+                </ul>
+
+                <p>Trataremos os atos que influenciam ou orientam essas atividades da mesma maneira que tratamos as atividades
+                  em si, e as mesmas consequências serão aplicadas.</p>
+
+                <p>Espera-se que ao receber um pedido para interromper o comportamento inadequado, isso seja feito imediatamente.</p>
+
+                <h5 id="desrespeito-as-leis">Desrespeito as leis</h5>
+
+                <p>Qualquer atitude que desrespeite as leis vigentes não será tolerada.</p>
+
+                <h4 id="consequências-do-comportamento-inaceitável">Consequências do comportamento inaceitável</h4>
+
+                <p>O mau comportamento de qualquer um, incluindo aqueles com autoridade de tomada de decisão, responsáveis,
+                  fornecedores, voluntários, patrocinadores, e qualquer outra pessoa conectada às atividades da Microsoft
+                  MVP Conference Brasil também estão sujeitos à política anti-assédio.</p>
+
+                <p>Retiraremos de nosso evento assim como de nossas redes sociais e de parceiros, qualquer divulgação, estando
+                  sujeito a avaliações negativas.</p>
+
+                <p>Ao violar estas normas, poderá ser solicitado que saia do recinto seja este online ou presencial, temporariamente
+                  ou durante todo a duração do encontro. Além disso, poderá ser banido da participação em espaços ou atividades
+                  e encontros futuros definitivamente.</p>
+
+                <p>Os esforços intencionais de excluir pessoas das atividades, incluindo através de denúncias falsas, é um ato
+                  inadmissível. Serão tomadas medidas adequadas para resolver esta situação. As denúncias falsas, especialmente
+                  para retaliar ou excluir, não serão aceitas ou toleradas.</p>
+
+                <p>A Microsoft MVP Conference Brasil mantém um corpo responsável por julgar se um comportamento é ou não aceitável.
+                  Este corpo tem palavra final sobre as decisões.
+                </p>
+
+                <h4 id="denúncias">Denúncias</h4>
+
+                <h5 id="nós-da-microsoft-mvp-conference-brasil-não-aceitamos-nenhuma-forma-de-assédio-ou-desrespeito">Nós da Microsoft MVP Conference Brasil não aceitamos nenhuma forma de assédio ou desrespeito.</h5>
+
+                <p>Se você observar a violação destas orientações, mesmo que a situação não esteja acontecendo com você, ou
+                  se achar que foi injustamente acusado de violar estas instruções, contacte imediatamente alguém da liderança
+                  para que as ações adequadas sejam tomadas.</p>
+
+                <p>
+
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">FECHAR</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--
    Aqui vem o mapa do google e nao sei porque nao está funcionando // copiei daqui:
    https://mdbootstrap.com/javascript/bootstrap-google-map/
@@ -1876,6 +2088,21 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(function (reg) {
+          // SW registrado
+        }).catch(function (err) {
+          // SW não registrou
+        });
+    }
+
+    $(function(){
+      $('.carousel').carousel();
+    })
+  </script>
 </body>
 
 </html>

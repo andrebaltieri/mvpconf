@@ -204,6 +204,81 @@ header.masthead .intro-text .intro-heading {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+header.masthead-keynotes {
+  text-align: left;
+  color: white;
+  background-image: url(../img/banner1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 923px;
+}
+
+header.masthead-keynotes .intro-text {
+  padding-left: 15px;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+header.masthead-keynotes .intro-text .intro-heading {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header.masthead-keynotes .intro-text .intro-heading {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+header.masthead-keynotes2 {
+  text-align: left;
+  color: white;
+  background-image: url(../img/banner2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 923px;
+}
+
+header.masthead-keynotes2 .intro-text {
+  padding-left: 10px;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+header.masthead-keynotes2 .intro-text .intro-lead-in {
+  font-size: 22px;
+  font-style: italic;
+  line-height: 22px;
+  margin-bottom: 25px;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header.masthead-keynotes2 .intro-text .intro-heading {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+
 @media (min-width: 768px) {
   header.masthead .intro-text {
     padding-top: 300px;
@@ -218,6 +293,46 @@ header.masthead .intro-text .intro-heading {
   }
   header.masthead .intro-text .intro-heading {
     font-size: 75px;
+    font-weight: 700;
+    line-height: 75px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  header.masthead-keynotes .intro-text {
+    padding-top: 270px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+  }
+  header.masthead-keynotes .intro-text .intro-lead-in {
+    font-size: 40px;
+    font-style: italic;
+    line-height: 40px;
+    margin-bottom: 25px;
+    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  header.masthead-keynotes .intro-text .intro-heading {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 75px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  header.masthead-keynotes2 .intro-text {
+    padding-top: 270px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+  }
+  header.masthead-keynotes2 .intro-text .intro-lead-in {
+    font-size: 40px;
+    font-style: italic;
+    line-height: 40px;
+    margin-bottom: 25px;
+    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  header.masthead-keynotes2 .intro-text .intro-heading {
+    font-size: 50px;
     font-weight: 700;
     line-height: 75px;
     margin-bottom: 50px;
@@ -699,4 +814,13 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #FF5050;
+}
+
+.team-member a:hover {
+  color: #FF5050 ;
+  text-decoration: none;
+} 
+
+.team-member img {
+  border: 4px solid #FF5050 !important;
 }
