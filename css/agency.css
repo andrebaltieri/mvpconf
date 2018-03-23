@@ -714,3 +714,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   color: #FF5050 !important;
 } 
 
+.team-member-padding {
+  padding-left: 50px;
+}
