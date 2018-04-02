@@ -374,11 +374,11 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="col-lg-12 text-center">
+    <div class="container d-none d-sm-none d-md-block">
+      <div class="col-lg-12 text-center ">
         <h2 class="section-heading text-uppercase">Visão Completa</h2>
         <div class="btn-group btn-group-lg" role="group" aria-label="...">
-          <button type="button" id="btnAgenda06" class="btn btn-primary">Dia 06</button>
+          <button type="button" id="btnAgenda06" class="btn btn-primary active">Dia 06</button>
           <button type="button" id="btnAgenda07" class="btn btn-primary">Dia 07</button>
         </div>
       </div>
@@ -589,27 +589,11 @@
                             </div>
                         </td>
                     </tr>
-
-                    
                 </tbody>
             </table>
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
       </div>
-      <div class="col-md-12 col-sm-12" style="display:none" id="dia07">
+      <div class="col-md-12 col-sm-12" id="dia07" style="display: none;">
           <br />
           <div class="row">
               <table class="table table-condensed table-bordered">
@@ -1635,7 +1619,6 @@
   </footer>
 
   <!-- Portfolio Modals -->
-
   <!-- Modal 1 -->
   <div class="portfolio-modal modal fade" id="trilha-01" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
@@ -1652,15 +1635,14 @@
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Trilha Azure</h2>
                 <p class="item-intro text-muted">14 Palestras</p>
-
                 <table class="table table-hover table-responsive table-striped">
                   <thead>
                     <tr>
-                      <th class="text-center">Dia</th>
+                      <th class="text-center" width="05%">Dia</th>
                       <!-- <th class="text-center">Sala</th> -->
-                      <th class="text-center">Horário</th>
-                      <th class="text-center">Palestrante</th>
-                      <th class="text-center">Palestra</th>
+                      <th class="text-center" width="20%">Horário</th>
+                      <th class="text-center" width="10%">Palestrante</th>
+                      <th class="text-center" width="65%">Palestra</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -1709,13 +1691,6 @@
                     <tr>
                       <td class="text-center">06/04</td>
                       <!-- <td class="text-center">AUDITÓRIO</td> -->
-                      <td class="text-center">17:00 - 17:55</td>
-                      <td>André Baltieri</td>
-                      <td>Recursos do Azure para turbinar sua API</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">06/04</td>
-                      <!-- <td class="text-center">AUDITÓRIO</td> -->
                       <td class="text-center">17:00 - 17:25</td>
                       <td>Renato Groffe</td>
                       <td>Tecnologias de bancos de dados no Azure: conhecendo as opções relacionais e NoSQL disponíveis</td>
@@ -1749,13 +1724,19 @@
                       <td>Gilson Banin</td>
                       <td>Inside Azure DataCenter </td>
                     </tr>
-
                     <tr>
                       <td class="text-center">07/04</td>
                       <!-- <td class="text-center">SALA 4</td> -->
                       <td class="text-center">16:00 - 16:55</td>
                       <td>Renato Groffe</td>
                       <td>NoSQL na nuvem com o Azure Cosmos DB</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">07/04</td>
+                      <!-- <td class="text-center">AUDITÓRIO</td> -->
+                      <td class="text-center">17:00 - 17:55</td>
+                      <td>André Baltieri</td>
+                      <td>Recursos do Azure para turbinar sua API</td>
                     </tr>
                     <tr>
                       <td class="text-center">07/04</td>
@@ -1774,7 +1755,6 @@
       </div>
     </div>
   </div>
-
   <!-- Modal 2 -->
   <div class="portfolio-modal modal fade" id="trilha-02" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
@@ -1794,11 +1774,11 @@
                 <table class="table table-hover table-responsive table-striped">
                   <thead>
                     <tr>
-                      <th class="text-center">Dia</th>
+                      <th class="text-center" width="05%">Dia</th>
                       <!-- <th class="text-center">Sala</th> -->
-                      <th class="text-center">Horário</th>
-                      <th class="text-center">Palestrante</th>
-                      <th class="text-center">Palestra</th>
+                      <th class="text-center" width="20%">Horário</th>
+                      <th class="text-center" width="10%">Palestrante</th>
+                      <th class="text-center" width="65%">Palestra</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -1840,7 +1820,6 @@
       </div>
     </div>
   </div>
-
   <!-- Modal 3 -->
   <div class="portfolio-modal modal fade" id="trilha-03" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
@@ -1861,11 +1840,11 @@
                 <table class="table table-hover table-responsive table-striped">
                   <thead>
                     <tr>
-                      <th class="text-center">Dia</th>
+                      <th class="text-center" width="05%">Dia</th>
                       <!-- <th class="text-center">Sala</th> -->
-                      <th class="text-center">Horário</th>
-                      <th class="text-center">Palestrante</th>
-                      <th class="text-center">Palestra</th>
+                      <th class="text-center" width="20%">Horário</th>
+                      <th class="text-center" width="10%">Palestrante</th>
+                      <th class="text-center" width="65%">Palestra</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -1928,7 +1907,6 @@
       </div>
     </div>
   </div>
-
   <div class="portfolio-modal modal fade" id="trilha-04" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -1943,16 +1921,16 @@
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Empreendedorismo</h2>
-                <p class="item-intro text-muted">9 palestras</p>
+                <p class="item-intro text-muted">10 palestras</p>
 
                 <table class="table table-hover table-responsive table-striped">
                   <thead>
                     <tr>
-                      <th class="text-center">Dia</th>
+                      <th class="text-center" width="05%">Dia</th>
                       <!-- <th class="text-center">Sala</th> -->
-                      <th class="text-center">Horário</th>
-                      <th class="text-center">Palestrante</th>
-                      <th class="text-center">Palestra</th>
+                      <th class="text-center" width="20%">Horário</th>
+                      <th class="text-center" width="10%">Palestrante</th>
+                      <th class="text-center" width="65%">Palestra</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -2015,6 +1993,13 @@
                     <tr>
                       <td class="text-center">07/04</td>
                       <!-- <td class="text-center">SALA 1</td> -->
+                      <td class="text-center">10:00 - 10:50</td>
+                      <td>Fábio Camara</td>
+                      <td>Do zero aos R$50 milhões</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">07/04</td>
+                      <!-- <td class="text-center">SALA 1</td> -->
                       <td class="text-center">11:00 - 11:55</td>
                       <td>Rafael Bernardes</td>
                       <td>Os #3 Segredos para quem Deseja Empreender em TI</td>
@@ -2029,7 +2014,6 @@
       </div>
     </div>
   </div>
-
   <div class="portfolio-modal modal fade" id="trilha-05" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -2048,11 +2032,11 @@
                 <table class="table table-hover table-responsive table-striped">
                   <thead>
                     <tr>
-                      <th class="text-center">Dia</th>
+                      <th class="text-center" width="05%">Dia</th>
                       <!-- <th class="text-center">Sala</th> -->
-                      <th class="text-center">Horário</th>
-                      <th class="text-center">Palestrante</th>
-                      <th class="text-center">Palestra</th>
+                      <th class="text-center" width="20%">Horário</th>
+                      <th class="text-center" width="10%">Palestrante</th>
+                      <th class="text-center" width="65%">Palestra</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -2072,7 +2056,13 @@
                       <td>Fabio Scopeta</td>
                       <td>Como a Inteligência Artificial já mudou a sua vida</td>
                     </tr>
-
+                    <tr>
+                      <td class="text-center">06/04</td>
+                      <!-- <td class="text-center">AUDITÓRIO</td> -->
+                      <td class="text-center">10:00 - 10:55</td>
+                      <td>Lucas Almeida Romão</td>
+                      <td>Crie, implemente e escale aplicações com o Azure App Service</td>
+                    </tr>
                     <tr>
                       <td class="text-center">06/04</td>
                       <!-- <td class="text-center">AUDITÓRIO</td> -->
@@ -2080,13 +2070,7 @@
                       <td>Angelo Belchior</td>
                       <td>Adicione Inteligencia Artificial aos seus aplicativos Xamarin</td>
                     </tr>
-                    <tr>
-                      <td class="text-center">06/04</td>
-                      <!-- <td class="text-center">AUDITÓRIO</td> -->
-                      <td class="text-center">17:30 - 17:55</td>
-                      <td>Lucas Almeida Romão</td>
-                      <td>Q&A Maker - Seu BOT em minutos</td>
-                    </tr>
+                    
                     <tr>
                       <td class="text-center">07/04</td>
                       <!-- <td class="text-center">AUDITÓRIO</td> -->
@@ -2111,7 +2095,7 @@
                     <tr>
                       <td class="text-center">07/04</td>
                       <!-- <td class="text-center">AUDITÓRIO</td> -->
-                      <td class="text-center">17:00 - 16:55</td>
+                      <td class="text-center">17:00 - 17:55</td>
                       <td>Diego Nogare</td>
                       <td>Inteligencia Artificial</td>
                     </tr>
@@ -2125,7 +2109,6 @@
       </div>
     </div>
   </div>
-
   <div class="portfolio-modal modal fade" id="trilha-06" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -2141,15 +2124,14 @@
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">IoT</h2>
                 <p class="item-intro text-muted">3 palestras</p>
-
                 <table class="table table-hover table-responsive table-striped">
                   <thead>
                     <tr>
-                      <th class="text-center">Dia</th>
+                      <th class="text-center" width="05%">Dia</th>
                       <!-- <th class="text-center">Sala</th> -->
-                      <th class="text-center">Horário</th>
-                      <th class="text-center">Palestrante</th>
-                      <th class="text-center">Palestra</th>
+                      <th class="text-center" width="20%">Horário</th>
+                      <th class="text-center" width="10%">Palestrante</th>
+                      <th class="text-center" width="65%">Palestra</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -2184,7 +2166,6 @@
       </div>
     </div>
   </div>
-
   <div class="portfolio-modal modal fade" id="trilha-07" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -2200,45 +2181,23 @@
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">ITPro & Segurança</h2>
                 <p class="item-intro text-muted">13 palestras</p>
-
                 <table class="table table-hover table-responsive table-striped">
                   <thead>
                     <tr>
-                      <th class="text-center">Dia</th>
+                      <th class="text-center" width="05%">Dia</th>
                       <!-- <th class="text-center">Sala</th> -->
-                      <th class="text-center">Horário</th>
-                      <th class="text-center">Palestrante</th>
-                      <th class="text-center">Palestra</th>
+                      <th class="text-center" width="20%">Horário</th>
+                      <th class="text-center" width="10%">Palestrante</th>
+                      <th class="text-center" width="65%">Palestra</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td class="text-center">06/04</td>
-                      <!-- <td class="text-center">SALA 1</td> -->
-                      <td class="text-center">09:00 - 09:25</td>
-                      <td>André Ruschel</td>
-                      <td>Como proteger seu ambiente Windows Server e Windows client contra novas ameaças de ransomware</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">06/04</td>
-                      <!-- <td class="text-center">SALA 5</td> -->
-                      <td class="text-center">09:00 - 09:55</td>
-                      <td>Marcelo Sincic</td>
-                      <td>Introdução ao Gerenciamento de Custos no Azure</td>
-                    </tr>
                     <tr>
                       <td class="text-center">06/04</td>
                       <!-- <td class="text-center">SALA 5</td> -->
                       <td class="text-center">11:00 - 11:55</td>
                       <td>Alexandro Prado</td>
                       <td>Transformando seu datacenter VMware em um Datacenter Azure</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">06/04</td>
-                      <!-- <td class="text-center">SALA 5</td> -->
-                      <td class="text-center">13:30 - 14:25</td>
-                      <td>Andre Oliveira</td>
-                      <td>RDS usando Azure </td>
                     </tr>
                     <tr>
                       <td class="text-center">06/04</td>
@@ -2282,6 +2241,13 @@
                       <td class="text-center">17:00 - 17:25</td>
                       <td>Idevar Gonçalves de Souza Junior</td>
                       <td>Criando Conectores de Busca Federada no Windows 10</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">07/04</td>
+                      <!-- <td class="text-center">SALA 5</td> -->
+                      <td class="text-center">09:00 - 09:55</td>
+                      <td>Marcelo Sincic</td>
+                      <td>Introdução ao Gerenciamento de Custos no Azure</td>
                     </tr>
                     <tr>
                       <td class="text-center">07/04</td>
@@ -2332,9 +2298,6 @@
                       <td>Eduardo Sena</td>
                       <td>Otimizando Deployment de Windows e aplicações usando MDT</td>
                     </tr>
-
-
-
                   </tbody>
                 </table>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">FECHAR</button>
@@ -2360,17 +2323,19 @@
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Mobilidade</h2>
-                <p class="item-intro text-muted">3 palestras</p>
+                <p class="item-intro text-muted">2 palestras</p>
 
                 <table class="table table-hover table-responsive table-striped">
                   <thead>
                     <tr>
-                      <th class="text-center">Dia</th>
-                      <!-- <th class="text-center">Sala</th> -->
-                      <th class="text-center">Horário</th>
-                      <th class="text-center">Palestrante</th>
-                      <th class="text-center">Palestra</th>
-                    </tr>
+                      <tr>
+                        <th class="text-center" width="05%">Dia</th>
+                        <!-- <th class="text-center">Sala</th> -->
+                        <th class="text-center" width="20%">Horário</th>
+                        <th class="text-center" width="10%">Palestrante</th>
+                        <th class="text-center" width="65%">Palestra</th>
+                      </tr>
+                      </tr>
                   </thead>
                   <tbody>
                     <tr>
@@ -2387,16 +2352,6 @@
                       <td>Alexandre Costa</td>
                       <td>Xamarin.Forms no mundo real</td>
                     </tr>
-
-                    <!-- <tr>
-                      <td class="text-center">06/04</td>
-                      <td class="text-center"></td>
-                      <td class="text-center">TBD</td>
-                      <td>William S. Rodriguez</td>
-                      <td>Compile, teste, distrubua, entenda, monitore e engage usuários em seu aplicativo móvel com o Visual
-                        Studio App Center.</td>
-                    </tr> -->
-
                   </tbody>
                 </table>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">FECHAR</button>
@@ -2427,12 +2382,12 @@
                 <table class="table table-hover table-responsive table-striped">
                   <thead>
                     <tr>
-                      <th class="text-center">Dia</th>
+                      <th class="text-center" width="05%">Dia</th>
                       <!-- <th class="text-center">Sala</th> -->
-                      <th class="text-center">Horário</th>
-                      <th class="text-center">Palestrante</th>
-                      <th class="text-center">Palestra</th>
-                    </tr>
+                      <th class="text-center" width="20%">Horário</th>
+                      <th class="text-center" width="10%">Palestrante</th>
+                      <th class="text-center" width="65%">Palestra</th>
+                  </tr>
                   </thead>
                   <tbody>
                     <tr>
@@ -2532,11 +2487,11 @@
                 <table class="table table-hover table-responsive table-striped">
                   <thead>
                     <tr>
-                      <th class="text-center">Dia</th>
+                      <th class="text-center" width="05%">Dia</th>
                       <!-- <th class="text-center">Sala</th> -->
-                      <th class="text-center">Horário</th>
-                      <th class="text-center">Palestrante</th>
-                      <th class="text-center">Palestra</th>
+                      <th class="text-center" width="20%">Horário</th>
+                      <th class="text-center" width="10%">Palestrante</th>
+                      <th class="text-center" width="65%">Palestra</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -2876,11 +2831,15 @@
         $("#btnAgenda06").click(function(){
           $("#dia06").show();
           $("#dia07").hide();
+          $(this).addClass("active");
+          $("#btnAgenda07").removeClass("active");
         });
 
         $("#btnAgenda07").click(function(){
           $("#dia07").show();
           $("#dia06").hide();
+          $("#btnAgenda06").removeClass("active");
+          $(this).addClass("active");
         });
 
 
